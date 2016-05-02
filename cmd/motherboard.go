@@ -43,7 +43,7 @@ to quickly create a Cobra application.`,
 			fmt.Println("Motherboard model:", mb.Model)
 			fmt.Println("Motherboard serial-number:", mb.SerialNumber)
 		} else {
-			fmt.Println("Permission denied (you must be root)!")
+			fmt.Println("Permission denied (you must be root)!", err)
 		}
 	},
 }

@@ -52,9 +52,8 @@ to quickly create a Cobra application.`,
 				fmt.Println("Ram part-number:", ram.Items[slot].PartNumber)
 				fmt.Println("")
 			}
-
 		} else {
-			fmt.Println("Permission denied (you must be root)!")
+			fmt.Println("Permission denied (you must be root)!", err)
 		}
 	},
 }
