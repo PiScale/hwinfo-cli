@@ -29,7 +29,7 @@ import (
 // cpuCmd represents the cpu command
 var cpuCmd = &cobra.Command{
 	Use:   "cpu",
-	Short: "A brief description of your command",
+	Short: "Show information about CPU",
 	Long: `A longer description that spans multiple lines and likely contains examples
 and usage of using your command. For example:
 
