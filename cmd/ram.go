@@ -49,7 +49,7 @@ to quickly create a Cobra application.`,
 				fmt.Println("DIMM Clock-speed:", dimm.ClockSpeed)
 				fmt.Println("DIMM Manufacturer:", dimm.Manufacturer)
 				fmt.Println("DIMM Serial-number:", dimm.SerialNumber)
-				fmt.Println("DIMM Part-number:", dimm.PartNumber)
+				//fmt.Println("DIMM Part-number:", dimm.PartNumber)
 				fmt.Println("")
 			}
 		} else {
