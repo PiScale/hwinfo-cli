@@ -42,12 +42,12 @@ to quickly create a Cobra application.`,
 		hdds, err := hwinfo.Get_hdd()
 		if err == nil {
 			for _, hdd := range hdds.Items {
-				fmt.Println("Logical Device name:", hdd.DevName)
-				fmt.Println("Model name:", hdd.Model)
-				fmt.Println("Serial number:", hdd.SerialNumber)
-				fmt.Println("Size:", hdd.Size)
-				fmt.Println("Firmware revision:", hdd.Firmware)
-				fmt.Println("Bus type:", hdd.Bus)
+				fmt.Println("HDD Logical Device name:", hdd.DevName)
+				fmt.Println("HDD Model name:", hdd.Model)
+				fmt.Println("HDD Serial number:", hdd.SerialNumber)
+				fmt.Println("HDD Size:", hdd.Size)
+				fmt.Println("HDD Firmware revision:", hdd.Firmware)
+				fmt.Println("HDD Bus type:", hdd.Bus)
 				fmt.Println("")
 			}
 		} else {
