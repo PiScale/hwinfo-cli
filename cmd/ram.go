@@ -42,14 +42,14 @@ to quickly create a Cobra application.`,
 		if err == nil {
 			fmt.Println("Ram Total Capacity:", ram.TotalCapacity)
 			fmt.Println("")
-			for slot, _ := range ram.Items {
-				fmt.Println("Ram Slot:", slot)
-				fmt.Println("Ram size:", ram.Items[slot].Size)
-				fmt.Println("Ram bank-location:", ram.Items[slot].BankLocator)
-				fmt.Println("Ram clock-speed:", ram.Items[slot].ClockSpeed)
-				fmt.Println("Ram manufacturer:", ram.Items[slot].Manufacturer)
-				fmt.Println("Ram serial-number:", ram.Items[slot].SerialNumber)
-				fmt.Println("Ram part-number:", ram.Items[slot].PartNumber)
+			for slot, dimm := range ram.Items {
+				fmt.Printf("DIMM number %v:\n", slot+1)
+				fmt.Println("DIMM Size:", dimm.Size)
+				fmt.Println("DIMM Bank-location:", dimm.BankLocator)
+				fmt.Println("DIMM Clock-speed:", dimm.ClockSpeed)
+				fmt.Println("DIMM Manufacturer:", dimm.Manufacturer)
+				fmt.Println("DIMM Serial-number:", dimm.SerialNumber)
+				fmt.Println("DIMM Part-number:", dimm.PartNumber)
 				fmt.Println("")
 			}
 		} else {

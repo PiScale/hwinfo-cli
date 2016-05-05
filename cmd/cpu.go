@@ -39,9 +39,9 @@ to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		cpu, err := hwinfo.Get_cpu()
 		if err == nil {
-			fmt.Println("CPU model:", cpu.Model)
-			fmt.Println("CPU quantity:", cpu.Quantity)
-			fmt.Println("CPU total cores:", cpu.Totalcores)
+			fmt.Println("CPU Model:", cpu.Model)
+			fmt.Println("CPU Quantity:", cpu.Quantity)
+			fmt.Println("CPU Total cores:", cpu.Totalcores)
 		} else {
 			fmt.Println("Unknown error:", err)
 		}

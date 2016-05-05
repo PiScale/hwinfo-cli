@@ -41,8 +41,8 @@ to quickly create a Cobra application.`,
 		nics, err := hwinfo.Get_nic()
 		if err == nil {
 			for _, nic := range nics.Items {
-				fmt.Println("Interface name:", nic.IfName)
-				fmt.Println("MAC address:", nic.MAC)
+				fmt.Println("NIC Interface name:", nic.IfName)
+				fmt.Println("NIC MAC Address:", nic.MAC)
 				fmt.Println("")
 			}
 		} else {

@@ -40,8 +40,8 @@ to quickly create a Cobra application.`,
 		// TODO: Work your own magic here
 		mb, err := hwinfo.Get_motherboard()
 		if err == nil {
-			fmt.Println("Motherboard model:", mb.Model)
-			fmt.Println("Motherboard serial-number:", mb.SerialNumber)
+			fmt.Println("Motherboard Model name:", mb.Model)
+			fmt.Println("Motherboard Serial-number:", mb.SerialNumber)
 		} else {
 			fmt.Println("Permission denied (you must be root)!", err)
 		}

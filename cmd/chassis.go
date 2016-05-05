@@ -40,8 +40,8 @@ to quickly create a Cobra application.`,
 		// TODO: Work your own magic here
 		chassis, err := hwinfo.Get_chassis()
 		if err == nil {
-			fmt.Println("Chassis manufacturer:", chassis.Manufacturer)
-			fmt.Println("Chassis serial-number:", chassis.SerialNumber)
+			fmt.Println("Chassis Manufacturer:", chassis.Manufacturer)
+			fmt.Println("Chassis Serial-number:", chassis.SerialNumber)
 		} else {
 			fmt.Println("Permission denied (you must be root)!", err)
 		}
